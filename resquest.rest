@@ -1,0 +1,30 @@
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGlhZ28iLCJpYXQiOjE2NTI3MjI5NTgsImV4cCI6MTY1MjcyMjk4OH0.L3u4X9Do73DQnKdzEAr-OvJWtQlpxJFJK1rrQBKgstA
+
+###
+
+DELETE http://localhost:4000/logout
+Content-Type: application/json
+
+{
+    "token": ""
+}
+
+###
+
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVGlhZ28iLCJpYXQiOjE2NTI3MjI5NTh9.tOX_nN-57D7FQKh9cMZXQJ8zmfK9w48gKeRz80gUVVQ"
+    
+}
+
+###
+
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "username": "Tiago"
+}
